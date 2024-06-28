@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Opções</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seleção de Opções de Personagem</h1>
+    </header>
+    <main>
+        <form id="opcoes-form">
+            <label for="nomepers">Nome do Personagem:</label>
+            <input type="text" id="nomepers" name="nomepers" required>
+            
+            <!-- Seleções -->
+            <label for="raca">Escolha uma Raça:</label>
+            <select id="raca" name="raca" required>
+                <option value="">Selecione uma raça</option>
+                <option value="humano">Humano</option>
+                <option value="anao">Anão</option>
+                <option value="elfo">Elfo</option>
+                <option value="qunari">Qunari</option>
+            </select>
+            <div id="raca-info" class="info"></div>
+
+            <label for="classe">Escolha uma Classe:</label>
+            <select id="classe" name="classe" required>
+                <option value="">Selecione uma classe</option>
+                <option value="guerreiro">Guerreiro</option>
+                <option value="paladino">Paladino</option>
+                <option value="necromante">Necromante</option>
+                <option value="ladino">Ladino</option>
+                <option value="barbaro">Bárbaro</option>
+                <option value="mago">Mago</option>
+            </select>
+            <div id="classe-info" class="info"></div>
+
+            <label for="arma">Escolha uma Arma:</label>
+            <select id="arma" name="arma" required>
+                <option value="">Selecione uma arma</option>
+                <option value="adaga">Adaga</option>
+                <option value="cajado">Cajado</option>
+                <option value="machado">Machado</option>
+                <option value="espada">Espada</option>
+                <option value="arco">Arco</option>
+            </select>
+            <div id="arma-info" class="info"></div>
+
+            <label for="background">Escolha um Background:</label>
+            <select id="background" name="background" required>
+                <option value="">Selecione um background</option>
+                <option value="Acolito">Acólito</option>
+                <option value="Heroi do povo">Herói do Povo</option>
+                <option value="Nobre">Nobre</option>
+                <option value="Assassino">Assassino</option>
+                <option value="Caçador">Caçador</option>
+            </select>
+            <div id="background-info" class="info"></div>
+
+            <label for="historia">História do Personagem:</label>
+            <textarea id="historia" name="historia" rows="4"></textarea>
+
+            <button type="button" id="prapag3">Finalizar</button>
+        </form>
+    </main>
+    <script src="Script/scripts.js"></script>
+</body>
+</html>

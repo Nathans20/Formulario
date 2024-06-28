@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Personagem</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c58cff4c78.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo do Site" class="logo">
+        <h1>Cadastro de Usuário</h1>
+    </header>
+    <main>
+        <form id="cadastro-form">
+            <label for="nome">Nome de usuário:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome de usuário" maxlength="30" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="aventureiros@guilda.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="number" id="tel" name="telefone" maxlength="11" placeholder="(00)00000-0000" required>
+
+            <label for="senha">Senha de acesso:</label>
+            <input type="password" id="senha" name="senha" placeholder="123@sD" required>
+
+            <label for="senhaconf">Confirme sua senha:</label>
+            <input type="password" id="senhaconf" name="senhaconf" placeholder="Confirme sua senha" required>
+
+            <label for="confirmacao-leitura" class="checkbox-label">
+                <input type="checkbox" id="confirmacao-leitura" name="confirmacao-leitura" required>
+                Confirmo que li e concordo com os termos e condições.
+            </label>
+
+            <!-- Botão proximo-->
+            <button type="button" id="prapag2">Próximo</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/nathans20/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Nathans20" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+    <script src="Script/scripts.js"></script>
+</body>
+</html>
